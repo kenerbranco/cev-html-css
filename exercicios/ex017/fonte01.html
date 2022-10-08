@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            w3c recomenda: "px" e "em" para font-size
+            */
+            font-size: 1em; /* weight: peso / width: largura / height: altura */ 
+            font-weight: lighter; /* lighter - normal - bold - bolder ou 100 à 900 (de 100 em 100) */
+            font-style: italic; /* normal - italic */
+            text-decoration: underline; /* sublinhado */
+        }
+
+        h1 {
+            /* shorthand font
+            - font-size -> font-weigth -> font-size -> font-style*/
+            font: italic bolder 3em sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi incidunt ut doloremque, totam obcaecati harum deserunt nemo neque alias, et culpa perspiciatis, ea doloribus fugiat velit sunt nobis suscipit eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum magni excepturi minus impedit unde saepe. Autem nulla commodi enim temporibus aperiam. Numquam alias eius at expedita praesentium. Vero, doloremque.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolore earum totam quod autem nam reprehenderit est voluptatum facilis provident alias aut recusandae suscipit sequi rem architecto quo, reiciendis dolorem.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, iste alias minima adipisci cupiditate cumque, nostrum consectetur unde, eos dolor quis voluptatum. Eaque dolore similique a? Perferendis velit provident qui!</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px; /* largura mín de celulares antigos */
+            max-width: 800px; 
+            margin: auto; /* centraliza independente da largura */
+        }
+
+        img {
+            width: 100%; /* largura máxima da img acompanhando width da tela */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eos harum mollitia ipsum nobis dolorum, quisquam omnis alias eligendi doloribus ad in laudantium vel hic quia officia a distinctio natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus mollitia, cupiditate quasi unde minus minima. Corrupti nulla provident corporis aliquid deleniti assumenda nihil, aut molestias odit distinctio? Recusandae, quam voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex debitis mollitia modi. Nobis nesciunt, totam consequuntur error perferendis explicabo. Facere reiciendis laudantium nobis a ipsum necessitatibus totam impedit modi!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eos harum mollitia ipsum nobis dolorum, quisquam omnis alias eligendi doloribus ad in laudantium vel hic quia officia a distinctio natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus mollitia, cupiditate quasi unde minus minima. Corrupti nulla provident corporis aliquid deleniti assumenda nihil, aut molestias odit distinctio? Recusandae, quam voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex debitis mollitia modi. Nobis nesciunt, totam consequuntur error perferendis explicabo. Facere reiciendis laudantium nobis a ipsum necessitatibus totam impedit modi!</p>
+    </main>
+</body>
+</html>
