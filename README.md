@@ -1,4 +1,4 @@
-# Estudos CeV :books:
+# Estudos HTML/CSS CeV :books:
 
 Área de Estudos na plataforma CeV referente à HTML5/CSS3:
  - Exercícios;
