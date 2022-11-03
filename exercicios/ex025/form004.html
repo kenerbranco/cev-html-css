@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!-- Tag para agrupamento -->
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre RegEx (expressão regular) -->
+        <!-- 
+            Exemplo:
+                "^\(\d{2}\)\d{4,5}-\d{4}$"
+
+                ^ = utilizado sempre no início da expressão
+                \( = abertura parênteses
+                \d{2} = dois dígitos do ddd
+                \) = fechamento parênteses
+                \d{4} = quatro à cinco números inicias do tel/cel
+                - = hifen do tel/cel
+                \d{4} = quatro dígitos finais do tel/cel
+                $ = utilizado sempre no final da expressão
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
