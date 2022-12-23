@@ -19,7 +19,24 @@ header h1 {
     text-align: center;
 }
 
+i#burguer {
+    display: block;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: gray;
+}
+
 menu {
+    display: none;
+}
+
+.menuOpen {
     display: block;
 }
 
@@ -58,4 +75,22 @@ article > p {
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+    
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 700px;
+    }
 }
